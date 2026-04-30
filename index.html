@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🎬 Movie Ticket Booking</h1>
+
+  <!-- Movie Selection -->
+  <div class="movie-container">
+    <label>Select a movie:</label>
+    <select id="movie">
+      <option value="200">Avengers (₹200)</option>
+      <option value="150">Joker (₹150)</option>
+      <option value="180">Inception (₹180)</option>
+    </select>
+  </div>
+
+  <!-- Seat Layout -->
+  <div class="container">
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+    </div>
+  </div>
+
+  <!-- Info -->
+  <p>
+    Seats Selected: <span id="count">0</span> |
+    Total Price: ₹<span id="total">0</span>
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
